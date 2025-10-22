@@ -1,0 +1,15 @@
+ai:
+    platform:
+        openai:
+            api_key: '%env(OPENAI_API_KEY)%'
+        anthropic:
+            api_key: '%env(ANTHROPIC_API_KEY)%'
+    agent:
+        main:
+            platform: 'ai.platform.openai'
+            model: 'gpt-4o-mini'
+        validator:
+            platform: 'ai.platform.openai'
+#            platform: 'ai.platform.anthropic'
+            model: 'gpt-4o-mini'
+#            model: 'claude-3-5-sonnet-20241022'
